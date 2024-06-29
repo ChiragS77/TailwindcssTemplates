@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+      <nav class=" p-3 flex bg-sky-100    justify-between items-center border-b border-b-white">
+         <a href="#" class="flex gap-2 items-center">
+            <img class=" object-cover max-w-12 max-h-12 " src="../assets/lotus.png" alt="logo">
+            <span class="text-lg font-medium font-display">Detachment</span>
+         </a>
+
+         <div id="nav-menu" class="hidden  lg:flex gap-12">
+            <a href="#" class="font-medium hover:text-blue-500">Pricing</a>
+            <a href="#" class="font-medium hover:text-blue-500">Docs</a>
+            <a href="#" class="font-medium hover:text-blue-500">Change log</a>
+            <a href="#" class="font-medium hover:text-blue-500">Blogs</a>
+            <a href="#" class="font-medium hover:text-blue-500">Login</a>
+         </div>
+
+         <button class="hidden lg:flex gap-2 items-center border border-gray-400 px-4 py-2 rounded-lg hover:border-gray-600">
+            <span class="">Electron Developer</span>
+            <i class="fa-solid fa-arrow-right"></i>
+         </button>
+         
+         
+      <button class="p-2  md:hidden ">
+        <i class="fa-solid fa-bars text-gray-600  " onclick="handleMenu()"></i>
+      </button>
+
+
+
+                                <!-- Dialog box -->
+      <div id="nav-dialog" class=" hidden fixed bg-sky-200 inset-0 p-3 z-10 md:hidden">
+
+         <div id="nav-bar"  class="flex justify-between">
+            <a href="#" class="flex gap-2 items-center">
+               <img class=" object-cover max-w-12 max-h-12 " src="../assets/lotus.png" alt="logo">
+               <span class="text-lg font-medium font-display">Detachment</span>
+            </a>
+
+            <button class="p-2  md:hidden ">
+               <i class="fa-solid fa-xmark text-gray-600  " onclick="handleMenu()"></i>
+             </button>
+            </div>
+
+            <div class="mt-6">
+               <a href="#" class="font-medium mr-3 p-3 hover:bg-sky-300 block rounded-lg">Pricing</a>
+               <a href="#" class="font-medium mr-3 p-3 hover:bg-sky-300 block rounded-lg">Docs</a>
+               <a href="#" class="font-medium mr-3 p-3 hover:bg-sky-300 block rounded-lg">Change log</a>
+               <a href="#" class="font-medium mr-3 p-3 hover:bg-sky-300 block rounded-lg">Blogs</a>
+               <a href="#" class="font-medium mr-3 p-3 hover:bg-sky-300 block rounded-lg">Login</a>
+
+             </div>
+             <div class="h-[1px] bg-gray-400">
+
+             </div>
+      </div>
+
+
+
+     </nav>
+</body>
+<script src="script.js"></script>
+</html>
+
+ 
